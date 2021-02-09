@@ -1,0 +1,15 @@
+<h3>Create a User</h3>
+<%= form_with url: '/users', local: true do |form| %>
+
+  <%= form.label :userName %>
+  <%= form.text_field :userName %>
+
+  <%= form.label :email %>
+  <%= form.email_field :email %>
+
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+
+  <br>
+  <%= form.submit 'Create User' %>
+<% end %>
